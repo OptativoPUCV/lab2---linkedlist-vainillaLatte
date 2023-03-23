@@ -139,3 +139,9 @@ list.c:46:21: error: ‘list’ is a pointer; did you mean to use ‘->’?
       |                     ->
 Compilation failed
 9127769
+Thu 23 Mar 2023 03:33:13 PM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  2|5
+total_score: 15/70
+de377cf
