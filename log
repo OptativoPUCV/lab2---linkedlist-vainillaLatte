@@ -249,3 +249,18 @@ Thu 23 Mar 2023 03:46:07 PM UTC:
  tests:  6|4
 total_score: 25/70
 b162ad9
+Thu 23 Mar 2023 03:46:37 PM UTC: 
+ list.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘prevList’:
+list.c:60:3: error: implicit declaration of function ‘f’ [-Werror=implicit-function-declaration]
+   60 |   f(!list) return NULL;
+      |   ^
+list.c:60:11: error: expected ‘;’ before ‘return’
+   60 |   f(!list) return NULL;
+      |           ^~~~~~~
+      |           ;
+cc1: all warnings being treated as errors
+Compilation failed
+f4e1977
