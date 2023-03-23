@@ -2,3 +2,15 @@ Wed 22 Mar 2023 01:39:22 AM UTC:
  tests:  0|6
 total_score: 0/70
 f5c6886
+Thu 23 Mar 2023 03:18:01 PM UTC: 
+ list.c | 13 ++++++++++++-
+ 1 file changed, 12 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:61:3: error: ‘lista’ undeclared (first use in this function); did you mean ‘list’?
+   61 |   lista->head=n;
+      |   ^~~~~
+      |   list
+list.c:61:3: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+996deb4
