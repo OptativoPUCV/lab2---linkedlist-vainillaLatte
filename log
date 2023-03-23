@@ -118,3 +118,13 @@ list.c:46:21: error: ‘list’ is a pointer; did you mean to use ‘->’?
       |                     ->
 Compilation failed
 d4893f0
+Thu 23 Mar 2023 03:31:42 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:46:21: error: ‘List’ {aka ‘struct List’} has no member named ‘next’
+   46 |   list->current=list->next;
+      |                     ^~
+Compilation failed
+d0b8773
