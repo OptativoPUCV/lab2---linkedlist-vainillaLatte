@@ -128,3 +128,14 @@ list.c:46:21: error: ‘List’ {aka ‘struct List’} has no member named ‘n
       |                     ^~
 Compilation failed
 d0b8773
+Thu 23 Mar 2023 03:32:35 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:46:21: error: ‘list’ is a pointer; did you mean to use ‘->’?
+   46 |   list->current=list.next;
+      |                     ^
+      |                     ->
+Compilation failed
+9127769
