@@ -501,3 +501,9 @@ list.c:184:10: error: ‘datoEliminado’ undeclared (first use in this function
 list.c:184:10: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 af15399
+Fri 24 Mar 2023 12:22:22 AM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  11|1
+total_score: 55/70
+009493a
