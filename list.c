@@ -182,7 +182,6 @@ void * popBack(List * list) {
   list->current = nodoAux;
 
   return datoEliminado;
-    return popCurrent(list);
 }
 
 void * popCurrent(List * list) {
