@@ -118,8 +118,7 @@ void pushCurrent(List * list, void * data) {
   list->current++;
 }
 
-void * popFront(List * list) {
-  void *popCurrent(List *list) { 
+void * popFront(List * list) { 
   
   if(list->current == NULL) return NULL;
   
@@ -163,7 +162,7 @@ void * popFront(List * list) {
   list->current = nodoAux;
 
   return datoEliminado;
-}
+
 }
 
 void * popBack(List * list) {
