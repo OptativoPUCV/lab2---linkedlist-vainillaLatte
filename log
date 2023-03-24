@@ -512,3 +512,22 @@ Fri 24 Mar 2023 12:23:55 AM UTC:
  1 file changed, 8 insertions(+), 1 deletion(-)
  tests:  0|0
 61cfc46
+Fri 24 Mar 2023 12:25:05 AM UTC: 
+ list.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:193:19: error: expected ‘;’ before ‘}’ token
+  193 |     popFront(list)
+      |                   ^
+      |                   ;
+  194 |   }
+      |   ~                
+list.c:197:18: error: expected ‘;’ before ‘}’ token
+  197 |     popBack(list)
+      |                  ^
+      |                  ;
+  198 |   }
+      |   ~               
+Compilation failed
+a74d8cd

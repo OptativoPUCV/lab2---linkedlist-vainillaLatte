@@ -188,6 +188,14 @@ void * popBack(List * list) {
 
 void * popCurrent(List * list) {
   void* dato=list->current->data;
+  if(list->current==list->head)
+  {
+    popFront(list)
+  }
+  if(list->current==list->tail)
+  {
+    popBack(list)
+  }
   
   Node *nodoAux = list->current->next;
   
