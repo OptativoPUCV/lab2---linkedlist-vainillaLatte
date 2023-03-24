@@ -190,11 +190,11 @@ void * popCurrent(List * list) {
   void* dato=list->current->data;
   if(list->current==list->head)
   {
-    popFront(list)
+    popFront(list);
   }
   if(list->current==list->tail)
   {
-    popBack(list)
+    popBack(list);
   }
   
   Node *nodoAux = list->current->next;
