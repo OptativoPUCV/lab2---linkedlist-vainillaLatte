@@ -186,7 +186,6 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
-  void *popCurrent(List *list) { 
   
   if(list->current == NULL) return NULL;
   
@@ -230,7 +229,6 @@ void * popCurrent(List * list) {
   list->current = nodoAux;
 
   return datoEliminado;
-}
 }
 
 void cleanList(List * list) {

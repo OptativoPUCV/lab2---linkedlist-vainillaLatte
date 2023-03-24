@@ -552,3 +552,9 @@ list.c:189:9: error: ‘popCurrent’ defined but not used [-Werror=unused-funct
 cc1: all warnings being treated as errors
 Compilation failed
 d8dd489
+Fri 24 Mar 2023 12:26:37 AM UTC: 
+ list.c | 2 --
+ 1 file changed, 2 deletions(-)
+ tests:  12|0
+total_score: 70/70
+865f63c
