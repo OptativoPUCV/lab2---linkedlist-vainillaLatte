@@ -120,12 +120,11 @@ void pushCurrent(List * list, void * data) {
 
 void * popFront(List * list) {
   list->current = list->head;
-  
   list->current->prev=NULL;
   list->current->next=NULL;
   list->current--;
     
-    return popCurrent(list);
+    return (list->current->data);
 }
 
 void * popBack(List * list) {
