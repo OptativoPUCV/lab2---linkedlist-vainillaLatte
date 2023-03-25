@@ -161,27 +161,7 @@ void * popFront(List * list) {
 
 void * popBack(List * list) {
     list->current = list->tail;
-  void* datoEliminado = list->current->data;
-  if(list->current == list->tail)
-  {
-    
-    list->tail = list->current->prev;
-    list->tail->next = NULL;
-  }
-  else
-  {
-      
-    list->current->next->prev = list->current->prev;
-    
-  }
-  
-  Node *nodoAux = list->current->next;
-  
-  free(list->current);
-
-  list->current = nodoAux;
-
-  return datoEliminado;
+  popCurrent(list);
 }
 
 void * popCurrent(List * list) {
