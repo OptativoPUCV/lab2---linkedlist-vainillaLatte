@@ -160,8 +160,8 @@ void * popFront(List * list) {
 }
 
 void * popBack(List * list) {
-    list->current = list->tail;
-  popCurrent(list);
+  list->current = list->tail;
+  return(popCurrent(list);
 }
 
 void * popCurrent(List * list) {

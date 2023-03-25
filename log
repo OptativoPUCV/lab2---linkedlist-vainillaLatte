@@ -575,3 +575,20 @@ list.c:165:1: error: control reaches end of non-void function [-Werror=return-ty
 cc1: all warnings being treated as errors
 Compilation failed
 8f7ac13
+Sat 25 Mar 2023 05:08:43 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘popBack’:
+list.c:164:26: error: expected ‘)’ before ‘;’ token
+  164 |   return(popCurrent(list);
+      |         ~                ^
+      |                          )
+list.c:164:27: error: expected ‘;’ before ‘}’ token
+  164 |   return(popCurrent(list);
+      |                           ^
+      |                           ;
+  165 | }
+      | ~                          
+Compilation failed
+7e7cd65
